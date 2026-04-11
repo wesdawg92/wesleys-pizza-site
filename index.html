@@ -1,38 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wesley’s Pizza</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 5px 0 10px;
+    }
+
+    ul {
+      margin: 10px 0 15px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .price {
+      float: right;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .container {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 
-<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
+<body>
+  <div class="container">
 
-  <h1>Wesley’s Pizza</h1>
+    <header>
+      <h1>Wesley’s Pizza</h1>
+    </header>
 
-  <p>
-    Don’t live life like an NPC (Non-Pizza Character).<br><br>
-    <h2>🍕 Pizzas (16")</h2>
+    <section>
+      <h2>🍕 Pizzas (16”)</h2>
 
-<h3>Build Your Own — Starting at $13</h3>
-<p>Create your loadout. +$1.75 per topping</p>
+      <h3>
+        Build Your Own
+        <span class="price">Starting at $13</span>
+      </h3>
+      <p>Create your loadout. +$1.75 per topping</p>
 
-<ul>
-  <li>Pepperoni</li>
-  <li>Sausage</li>
-  <li>Bacon</li>
-  <li>Chicken</li>
-  <li>Mushrooms</li>
-  <li>Onions</li>
-  <li>Bell Peppers</li>
-  <li>Jalapeños</li>
-  <li>Black Olives</li>
-  <li>Extra Cheese</li>
-</ul>
+      <ul>
+        <li>Pepperoni</li>
+        <li>Sausage</li>
+        <li>Bacon</li>
+        <li>Chicken</li>
+        <li>Mushrooms</li>
+        <li>Onions</li>
+        <li>Bell Peppers</li>
+        <li>Jalapeños</li>
+        <li>Black Olives</li>
+        <li>Extra Cheese</li>
+      </ul>
 
-<h3>Pentacheese — $21</h3>
-<p>Mozzarella, provolone, cheddar, feta, and gouda.</p>
-  
-<small>West Monroe, LA</small>
-  </p>
+      <h3>
+        Pentacheese
+        <span class="price">$21</span>
+      </h3>
+      <p>Mozzarella, provolone, cheddar, feta, and gouda. A full-stack cheese build with perfect balance.</p>
+    </section>
 
+    <section>
+      <h2>🧀 Sides</h2>
+
+      <h3>
+        Cheesy Bread
+        <span class="price">$11</span>
+      </h3>
+      <p>Buttery, garlicky bread loaded with melted cheese. Served with marinara.</p>
+    </section>
+
+    <section>
+      <h2>🥫 Sauces</h2>
+      <p>Ranch — $0.50</p>
+      <p>Marinara — $0.50</p>
+    </section>
+    <section>
+      <h2>🔪 Cut Options</h2>
+      <p>8 slices or 12 slices</p>
+    </section>
+        <section>
+      <p>Flat Delivery Fee — $4</p>
+    </section>
+
+    <footer>
+      <p>West Monroe, Louisiana</p>
+    </footer>
+
+  </div>
 </body>
 </html>
