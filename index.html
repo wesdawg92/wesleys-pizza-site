@@ -23,7 +23,7 @@
 
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     header h1 {
@@ -31,10 +31,12 @@
       font-size: 2rem;
     }
 
-    header p {
-      margin: 5px 0 0;
-      color: #555;
+    .tagline {
+      text-align: center;
       font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 25px;
+      font-weight: normal;
     }
 
     h2 {
@@ -69,16 +71,18 @@
       font-weight: bold;
     }
 
-    .section {
-      margin-bottom: 20px;
-    }
-
     footer {
       margin-top: 40px;
       padding-top: 20px;
       border-top: 1px solid #ddd;
       font-size: 0.9rem;
       color: #555;
+    }
+
+    .footer-note {
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 5px;
     }
 
     @media (max-width: 480px) {
@@ -99,7 +103,11 @@
     <header>
       <h1>Wesley’s Pizza</h1>
     </header>
-<section><h3>Don't live life like an NPC (Non-Pizza Character).</h3></section>
+
+    <div class="tagline">
+      Don't live life like an NPC (Non-Pizza Character).
+    </div>
+
     <section>
       <h2>Pizzas (16”)</h2>
 
@@ -144,12 +152,10 @@
       <p>Ranch — $0.50</p>
       <p>Marinara — $0.50</p>
     </section>
-        <section>
-      <p>Flat Delivery Fee — $4</p>
-    </section>
 
     <footer>
       <p>West Monroe, Louisiana</p>
+      <p class="footer-note">Flat delivery fee — $4</p>
     </footer>
 
   </div>
