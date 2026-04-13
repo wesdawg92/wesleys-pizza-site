@@ -1,12 +1,6 @@
 {
   "name": "Wesley's Pizza",
-  "short_name": "Pizza",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",{
-  "name": "Wesley's Pizza",
-  "short_name": "Pizza",
+  "short_name": "WPIZZA",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -17,7 +11,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
-}
   ]
 }
