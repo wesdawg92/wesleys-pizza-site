@@ -1,179 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Wesley’s Pizza</title>
+  <meta charset="UTF-8">
+  <title>Wesley's Pizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #fafafa;
-      color: #111;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
     }
-
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .menu-section h2 {
-  margin-bottom: 2px; /* pulls the text closer together */
-}
-
-.subtext {
-  font-size: 0.8rem;     /* smaller text */
-  color: #777;           /* softer gray instead of black */
-  margin-top: 0;
-}
 
     header {
-      text-align: center;
-      margin-bottom: 20px;
+      background: #000;
+      padding: 15px;
+      font-size: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-
-    .tagline {
-      text-align: center;
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 25px;
-      font-weight: normal;
-    }
-
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 1.4rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    h3 {
-      margin-top: 20px;
-      margin-bottom: 5px;
-      font-size: 1.1rem;
-    }
-
-    p {
-      margin: 5px 0 10px;
-    }
-
-    ul {
-      margin: 10px 0 15px 20px;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 4px;
-    }
-
-    .price {
-      float: right;
+    header a {
+      color: #00ff88;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 0.9rem;
-      color: #555;
+    .hero {
+      padding: 60px 20px;
     }
 
-    .footer-note {
-      font-size: 0.8rem;
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .call {
+      background: #00ff88;
+      color: #000;
+    }
+
+    .text {
+      background: #333;
+      color: #fff;
+    }
+
+    .section {
+      padding: 40px 20px;
+      border-top: 1px solid #222;
+    }
+
+    .footer {
+      padding: 20px;
+      font-size: 14px;
       color: #777;
-      margin-top: 5px;
+      border-top: 1px solid #222;
     }
 
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.6rem;
-      }
-
-      .container {
-        padding: 15px;
-      }
+    /* Sticky Order Button */
+    .sticky-order {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00ff88;
+      color: #000;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <header>
-      <h1>Wesley’s Pizza</h1>
-    </header>
+  <!-- HEADER -->
+  <header>
+    📞 <a href="tel:13188797933">Call or Text: (318) 555-1234</a>
+  </header>
 
-    <div class="tagline">
-      Don't live life like an NPC (Non-Pizza Character).
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Wesley's Pizza</h1>
+    <p>Don't live life like an NPC (Non-Pizza Character)</p>
+
+    <div class="cta">
+      <a class="call" href="tel:13188797933">📞 Call</a>
+      <a class="text" href="sms:13188797933">💬 Text Your Order</a>
     </div>
+  </section>
 
-    <section>
-      <h2>16-inch Pizzas</h2>
-      <p class="subtext">Cut to 8 or 12 slices</p>
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>How It Works</h2>
+    <p>
+      I make a limited number of pizzas each day, delivered fresh out of the oven.<br><br>
+      Text or call to schedule your delivery.<br><br>
+    </p>
+  </section>
 
-      <h3>
-        Build Your Own
-        <span class="price">Starting at $13</span>
-      </h3>
-      <p>Choose your loadout. +$1.75 per topping</p>
+  <!-- MENU -->
+  <section class="section">
+    <h2>Menu</h2>
+    <p>
+      [under construction]<br><br>
 
-      <ul>
-        <li>Pepperoni</li>
-        <li>Ham</li>
-        <li>Sausage</li>
-        <li>Bacon</li>
-        <li>Chicken</li>
-        <li>Mushrooms</li>
-        <li>Onions</li>
-        <li>Bell Peppers</li>
-        <li>Jalapeños</li>
-        <li>Black Olives</li>
-        <li>Pineapples</li>
-        <li>Extra Cheese</li>
-      </ul>
+      ask about the 16" Build-your-own and/or Cheesy Bread!
+    </p>
+  </section>
 
-      <h3>
-        Pentacheese
-        <span class="price">$21</span>
-      </h3>
-      <p>Mozzarella, provolone, cheddar, feta, and gouda. A full-stack cheese build with perfect balance.</p>
-    </section>
-
-<section>
-  <h2>Sides</h2>
-
-  <h3>
-    Cheesy Bread
-    <span class="price">$10</span>
-  </h3>
-  <p>Buttery, garlicky bread loaded with melted cheese.</p>
-
-  <h3>
-    Bacon & Jalapeño Cheesy Bread
-    <span class="price">$12</span>
-  </h3>
-  <p>Cheesy bread stuffed with bacon and jalapeños</p>
-</section>
-
-    <section>
-      <h2>Dipping cups</h2>
-      <p>Ranch — $0.50</p>
-      <p>Marinara — $0.50</p>
-    </section>
-
-    <footer>
-      <p>West Monroe, Louisiana</p>
-      <p class="footer-note">Flat delivery fee — $4</p>
-    </footer>
-
+  <!-- FOOTER -->
+  <div class="footer">
+    West Monroe, Louisiana
   </div>
+
+  <!-- STICKY BUTTON -->
+  <a class="sticky-order" href="sms:13188797933">
+    💬 Your Order Now
+  </a>
+
 </body>
 </html>
