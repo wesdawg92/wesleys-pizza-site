@@ -2,146 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wesley's Pizza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wesley's Pizza</title>
 
   <style>
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      text-align: center;
+      background: #ffffff;
+      color: #000000;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    header {
-      background: #000;
-      padding: 15px;
-      font-size: 18px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #333;
-    }
-
-    header a {
-      color: #00ff88;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      padding: 60px 20px;
-    }
-
-    .hero h1 {
-      font-size: 42px;
+    h1 {
+      font-size: 2.2rem;
       margin-bottom: 10px;
     }
 
-    .hero p {
-      font-size: 18px;
-      color: #ccc;
-    }
-
-    .cta {
-      margin-top: 30px;
-    }
-
-    .cta a {
-      display: inline-block;
-      padding: 15px 25px;
-      margin: 10px;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .call {
-      background: #00ff88;
-      color: #000;
-    }
-
-    .text {
-      background: #333;
-      color: #fff;
+    .subtitle {
+      color: #444;
+      margin-bottom: 40px;
     }
 
     .section {
-      padding: 40px 20px;
-      border-top: 1px solid #222;
+      margin-bottom: 40px;
+    }
+
+    .bitcoin-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .qr {
+      margin: 20px 0;
+    }
+
+    .address {
+      word-break: break-all;
+      font-family: monospace;
+      font-size: 0.95rem;
+      color: #333;
     }
 
     .footer {
-      padding: 20px;
-      font-size: 14px;
-      color: #777;
-      border-top: 1px solid #222;
-    }
-
-    /* Sticky Order Button */
-    .sticky-order {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #00ff88;
-      color: #000;
-      padding: 15px 20px;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #444;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    📞 <a href="tel:13188797933">Call or Text: (318) 879-7933</a>
-  </header>
+  <h1>Wesley's Pizza</h1>
+  <div class="subtitle">
+    Don't live life like an NPC (Non-Player Character)
+  </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Wesley's Pizza</h1>
-    <p>Don't live life like an NPC (Non-Pizza Character).</p>
+  <div class="section bitcoin-box">
+    <strong>Now Accepting Bitcoin</strong>
 
-    <div class="cta">
-      <a class="call" href="tel:13188797933">📞 Call</a>
-      <a class="text" href="sms:13188797933">💬 Text Your Order</a>
+    <div class="qr">
+      <!-- Replace the src below with your actual QR code -->
+      <img src="qr.png" alt="Bitcoin QR Code" width="200">
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="section">
-    <h2>How It Works</h2>
-    <p>
-      I make a limited number of pizzas each day, delivered fresh out of the oven.<br><br>
-      Text or call to schedule your delivery.<br><br>
-    </p>
-  </section>
+    <div>Tips</div>
 
-  <!-- MENU -->
-  <section class="section">
-    <h2>Menu</h2>
-    <p>
-      [under construction]<br><br>
+    <div class="address">
+      bc1qr6nyn3d3mve5dff8wtzejjsvk38hj9645t5v86
+    </div>
+  </div>
 
-      ask about the 16" Build-your-own and/or Cheesy Bread!
-    </p>
-  </section>
+  <div class="section">
+    <strong>Wesley's pizza-support hotline</strong><br>
+    318-879-7933
+  </div>
 
-  <!-- FOOTER -->
   <div class="footer">
     West Monroe, Louisiana
   </div>
-
-  <!-- STICKY BUTTON -->
-  <a class="sticky-order" href="sms:13188797933">
-    💬 Your Order Now
-  </a>
 
 </body>
 </html>
